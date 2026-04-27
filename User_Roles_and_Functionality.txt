@@ -1,0 +1,42 @@
+USER ROLES AND RESPONSIBILITIES
+
+1. ADMIN:
+- Manage user accounts (approve/reject users)
+- Monitor platform activities
+- Ensure data accuracy and system integrity
+- Manage content (guidelines, announcements)
+- Handle complaints and disputes
+
+2. FOOD DONOR:
+- Register and create profile
+- List surplus food with details (type, quantity, expiry)
+- Accept or decline requests from recipients
+- Track donation history and impact
+- Schedule pickup/delivery
+
+3. RECIPIENT ORGANIZATION:
+- Register and verify organization
+- Browse available food listings
+- Request food donations
+- Manage logistics (pickup/delivery coordination)
+- Track received donations and distribution
+
+4. DATA ANALYST:
+- Access platform data
+- Analyze food waste trends
+- Generate reports and dashboards
+- Provide insights for improving efficiency
+- Identify high-waste areas and suggest solutions
+
+CORE FUNCTIONAL MODULES:
+- User Authentication System
+- Food Listing & Management
+- Request & Approval Workflow
+- Notification System (SMS/Email/App)
+- Analytics Dashboard
+- Logistics Tracking System
+
+SECURITY FEATURES:
+- Role-based access control
+- Data encryption
+- Secure login authentication

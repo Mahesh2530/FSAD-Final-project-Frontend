@@ -1,0 +1,51 @@
+SYSTEM WORKFLOW:
+
+STEP 1: USER REGISTRATION
+- Users sign up based on their role (Donor, Recipient, Analyst)
+- Admin verifies and approves accounts
+
+STEP 2: FOOD LISTING
+- Donor uploads surplus food details:
+  - Food type
+  - Quantity
+  - Expiry time
+  - Location
+
+STEP 3: REQUEST PROCESS
+- Recipient organizations browse available food
+- Submit request for required items
+
+STEP 4: APPROVAL & MATCHING
+- Donor reviews requests
+- Approves suitable recipient
+
+STEP 5: LOGISTICS
+- Pickup or delivery is arranged
+- Tracking system updates status
+
+STEP 6: COMPLETION
+- Food is delivered successfully
+- Both parties confirm completion
+
+STEP 7: DATA COLLECTION
+- Data stored for analysis
+- Analyst generates reports
+
+KEY FEATURES:
+- Geo-location based matching
+- Real-time notifications
+- Dashboard with statistics
+- Impact tracking (meals saved, waste reduced)
+- Expiry alerts for food items
+
+FUTURE ENHANCEMENTS:
+- AI-based demand prediction
+- Route optimization for delivery
+- Integration with government food programs
+- Mobile app version
+
+BENEFITS:
+- Minimizes food wastage
+- Supports needy communities
+- Improves supply chain efficiency
+- Encourages sustainable practices
