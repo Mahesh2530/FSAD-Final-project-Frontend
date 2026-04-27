@@ -1,0 +1,53 @@
+Title: Database Design and Tables
+
+The database is designed using multiple tables to store different types of data.
+
+1. Users Table
+
+Stores all user information.
+Fields:
+
+user_id (Primary Key)
+name
+email
+password
+role (Admin / Donor / Recipient / Analyst)
+2. Food_Donations Table
+
+Stores details of food donated by donors.
+Fields:
+
+donation_id (Primary Key)
+donor_id (Foreign Key from Users)
+food_name
+quantity
+expiry_date
+location
+3. Requests Table
+
+Stores food requests from recipient organizations.
+Fields:
+
+request_id (Primary Key)
+recipient_id (Foreign Key from Users)
+food_needed
+quantity
+status
+4. Distribution Table
+
+Tracks how food is distributed.
+Fields:
+
+distribution_id (Primary Key)
+donation_id (Foreign Key)
+recipient_id (Foreign Key)
+delivery_status
+5. Reports Table
+
+Stores analysis data for food waste trends.
+Fields:
+
+report_id (Primary Key)
+total_food_saved
+total_waste_reduced
+date

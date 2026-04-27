@@ -1,0 +1,20 @@
+Title: Conclusion and Contribution
+
+In this project, the database was designed to support the food waste management system effectively.
+
+The database helps in:
+
+Organizing user data
+Managing food donations and requests
+Tracking distribution of food
+Generating reports for analysis
+
+My contribution to the project was designing and creating the database. I worked on defining tables, fields, and relationships between them.
+
+This database ensures:
+
+Efficient data storage
+Easy data retrieval
+Accurate tracking of food resources
+
+Overall, the system helps reduce food waste and supports better food distribution to people in need.

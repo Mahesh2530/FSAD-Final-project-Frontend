@@ -1,0 +1,21 @@
+Title: Food Waste Management System – Database Introduction
+
+This project is about building a platform to track and reduce food waste. The system helps people manage food resources efficiently and supports food donation to needy people.
+
+The database plays an important role in storing and managing all the data in the system. It keeps records of users, food donations, requests, and reports.
+
+There are four main types of users in this system:
+
+Admin
+Food Donor
+Recipient Organization
+Data Analyst
+
+The database helps to:
+
+Store surplus food details
+Manage donation and request process
+Track food distribution
+Analyze food waste data
+
+This system improves food security and reduces food waste by connecting donors and recipients.
