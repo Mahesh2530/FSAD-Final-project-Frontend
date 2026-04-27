@@ -155,6 +155,16 @@ export const mockUserProfiles = {
 
 // Admin dashboard analytics
 export const mockAdminAnalytics = {
+  // Dashboard statistics (what the page expects)
+  total_users: 82,
+  new_users_today: 5,
+  total_donations: 579,
+  new_donations_today: 12,
+  total_food_kg: 7580,
+  food_kg_this_month: 1560,
+  pending_approvals: 8,
+  
+  // Analytics charts data
   donations_over_time: [
     { month: 'Jan', count: 87, weight_kg: 435 },
     { month: 'Feb', count: 102, weight_kg: 510 },

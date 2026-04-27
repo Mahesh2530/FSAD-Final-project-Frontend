@@ -183,6 +183,77 @@ export const handlers = [
       );
     }
   }),
+
+  // Handler for auth login (same as users/login)
+  http.post('/api/v1/auth/login', async ({ request }) => {
+    await delay(MOCK_DELAY);
+    
+    const requestBody = await request.json();
+    
+    // Basic validation
+    if (!requestBody.email || !requestBody.password_hash) {
+      return new HttpResponse(
+        JSON.stringify({ message: 'Email and password are required' }),
+        { status: 400 }
+      );
+    }
+    
+    // Demo credentials for testing
+    const validCredentials = [
+      { 
+        email: 'donor@example.com', 
+        password: 'password123',
+        userData: {
+          user_id: '550e8400-e29b-41d4-a716-446655440000',
+          username: 'John Donor',
+          email: 'donor@example.com',
+          role: 'donor'
+        }
+      },
+      { 
+        email: 'beneficiary@example.com', 
+        password: 'password123',
+        userData: {
+          user_id: '550e8400-e29b-41d4-a716-446655440001',
+          username: 'Mary Beneficiary',
+          email: 'beneficiary@example.com',
+          role: 'beneficiary'
+        }
+      },
+      { 
+        email: 'admin@example.com', 
+        password: 'password123',
+        userData: {
+          user_id: '550e8400-e29b-41d4-a716-446655440002',
+          username: 'Admin User',
+          email: 'admin@example.com',
+          role: 'admin'
+        }
+      },
+    ];
+    
+    // Find matching user
+    const user = validCredentials.find(
+      cred => cred.email === requestBody.email && cred.password === requestBody.password_hash
+    );
+    
+    if (user) {
+      // Generate a mock token
+      const token = 'mock-jwt-token-' + Math.random().toString(36).substring(2);
+      
+      // Return user data with token
+      return HttpResponse.json({
+        ...user.userData,
+        token
+      });
+    } else {
+      return new HttpResponse(
+        JSON.stringify({ message: 'Invalid email or password' }),
+        { status: 401 }
+      );
+    }
+  }),
+
     // Handler for user logout
   http.post('/api/v1/auth/logout', async () => {
     await delay(MOCK_DELAY);
@@ -409,6 +480,13 @@ export const handlers = [
     await delay(MOCK_DELAY);
     return HttpResponse.json(mockAdminAnalytics);
   }),
+
+  // Get admin analytics data
+  http.get('/api/v1/admin/analytics', async () => {
+    await delay(MOCK_DELAY);
+    return HttpResponse.json(mockAdminAnalytics);
+  }),
+
     // Get users for admin
   http.get('/api/v1/admin/users', async () => {
     await delay(MOCK_DELAY);
