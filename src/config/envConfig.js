@@ -24,14 +24,14 @@ const ENV = {
     
     // Staging environment
     staging: {
-      BASE_URL: 'https://foodsharemain-production.up.railway.app/api/v1',
+      BASE_URL: 'https://foodsharemain-backend.onrender.com/api/v1',
       TIMEOUT: 15000, // 15 seconds
       MOCK_ENABLED: false
     },
     
-    // Production environment (Railway backend)
+    // Production environment (Render backend)
     production: {
-      BASE_URL: 'https://foodsharemain-production.up.railway.app/api/v1',
+      BASE_URL: 'https://foodsharemain-backend.onrender.com/api/v1',
       TIMEOUT: 20000, // 20 seconds
       MOCK_ENABLED: false
     }
